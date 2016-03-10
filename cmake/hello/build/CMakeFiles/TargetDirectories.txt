@@ -1,0 +1,2 @@
+/home/fly/Learning/cmake/hello/build/lib/CMakeFiles/hello.dir
+/home/fly/Learning/cmake/hello/build/src/CMakeFiles/main.dir

@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project(HELLO)
+add_subdirectory(src)
+add_subdirectory(lib)
+message(${PROJECT_SOURCE_DIR},${PROJECT_BINARY_DIR})
+message(${HELLO_SOURCE_DIR},${HELLO_BINARY_DIR})
+set(CMAKE_VERBOSE_MAKEFILE on)

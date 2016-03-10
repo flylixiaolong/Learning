@@ -1,0 +1,5 @@
+set(LIB_SRC hello.c)
+add_definitions("-DLIBHELLO_BUILD")
+add_library(hello SHARED ${LIB_SRC})
+set_target_properties(hello PROPERTIES OUTPUT_NAME hello)
+set(LIBRARY_OUPUT_PATH ${PROJECT_BINARY_PATH}/lib)

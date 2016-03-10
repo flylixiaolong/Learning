@@ -1,0 +1,6 @@
+Bitcraze and the Crazyflie
+Ever wanted a development-kit that flies? We did, so we developed the Crazyflie Nano Quadcopter! The goal with the Crazyflie was to give users a flying base for their development. We wanted to create an open source platform that would be fun to use, as well as give the users the possibility to work on and experiment with a wide range of features and areas.
+
+In order for users to quickly get going with their flying and development we provide a virtual machine with everything that is needed, documentation of the project and design as well as a range of different software. Flying is done from our main client software where you can use a variety of joysticks as well as the Leap Motion. You can also use our custom SD-card image for flying from the Raspberry Pi or our Android client for flying from your smartphone.
+
+We are constantly working on improving the design and trying to come up with fun new hacks and experiments that we implement and show users how to do. Through our community everyone get the chance to join in the discussion and development as well as take part and contribute to all the documentation.
