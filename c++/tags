@@ -1,0 +1,45 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	friend.cpp	/^class A{$/;"	c	file:
+A	vitual.cpp	/^class A{$/;"	c	file:
+A::a	friend.cpp	/^		int a=1;$/;"	m	class:A	file:	access:private
+A::a	vitual.cpp	/^		int a;$/;"	m	class:A	file:	access:public
+A::b	friend.cpp	/^		int b=2;$/;"	m	class:A	file:	access:protected
+A::b	vitual.cpp	/^		int b;$/;"	m	class:A	file:	access:protected
+A::c	friend.cpp	/^		int c=3;$/;"	m	class:A	file:	access:public
+A::c	vitual.cpp	/^		int c;$/;"	m	class:A	file:	access:protected
+A::show	friend.cpp	/^	friend void show(const A &a);$/;"	p	class:A	file:	access:friend	signature:(const A &a)
+A::show	vitual.cpp	/^		virtual void show()$/;"	f	class:A	access:public	signature:()
+B	vitual.cpp	/^class B:public A{$/;"	c	file:	inherits:A
+B::set	vitual.cpp	/^		void set(int i,int j,int k)$/;"	f	class:B	access:public	signature:(int i,int j,int k)
+Base	class.cpp	/^class Base{$/;"	c	file:
+Base::a	class.cpp	/^		int a=1;$/;"	m	class:Base	file:	access:private
+Base::b	class.cpp	/^		int b=2;$/;"	m	class:Base	file:	access:protected
+Base::c	class.cpp	/^		int c=3;$/;"	m	class:Base	file:	access:public
+Base::show	class.cpp	/^		void show(){$/;"	f	class:Base	access:public	signature:()
+Derived	class.cpp	/^class Derived:protected Base{$/;"	c	file:	inherits:Base
+a	class.cpp	/^		int a=1;$/;"	m	class:Base	file:	access:private
+a	friend.cpp	/^		int a=1;$/;"	m	class:A	file:	access:private
+a	vitual.cpp	/^		int a;$/;"	m	class:A	file:	access:public
+b	class.cpp	/^		int b=2;$/;"	m	class:Base	file:	access:protected
+b	friend.cpp	/^		int b=2;$/;"	m	class:A	file:	access:protected
+b	vitual.cpp	/^		int b;$/;"	m	class:A	file:	access:protected
+c	class.cpp	/^		int c=3;$/;"	m	class:Base	file:	access:public
+c	friend.cpp	/^		int c=3;$/;"	m	class:A	file:	access:public
+c	vitual.cpp	/^		int c;$/;"	m	class:A	file:	access:protected
+main	class.cpp	/^int main()$/;"	f	signature:()
+main	friend.cpp	/^int main()$/;"	f	signature:()
+main	inserter.cpp	/^int main()$/;"	f	signature:()
+main	share.cpp	/^int main()$/;"	f	signature:()
+main	uptr.cpp	/^int main()$/;"	f	signature:()
+main	vec.cpp	/^int main(){$/;"	f	signature:()
+main	vitual.cpp	/^int main()$/;"	f	signature:()
+set	vitual.cpp	/^		void set(int i,int j,int k)$/;"	f	class:B	access:public	signature:(int i,int j,int k)
+show	class.cpp	/^		void show(){$/;"	f	class:Base	access:public	signature:()
+show	friend.cpp	/^	friend void show(const A &a);$/;"	p	class:A	file:	access:friend	signature:(const A &a)
+show	friend.cpp	/^void show(const A &a)$/;"	f	signature:(const A &a)
+show	vitual.cpp	/^		virtual void show()$/;"	f	class:A	access:public	signature:()
