@@ -1,0 +1,9 @@
+*.swp
+
+~*
+
+.idea
+.vscode
+
+*.log
+node_modules

@@ -1,3 +1,0 @@
-Command terminated by signal 15
-13.62
-0.53
