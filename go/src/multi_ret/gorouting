@@ -1,0 +1,8 @@
+go func() {
+	for job :=range jobs{
+		fmt.Println(job)
+		done <- true //向通道写数据
+	}
+}
+
+ret=<-done //接受数据
