@@ -1,0 +1,25 @@
+@font-face {
+    font-family: sourcesanspro;
+    src: url('./fonts/sourcesanspro.woff');
+    font-weight:normal;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('./fonts/sourcesanspro.woff');
+    font-weight:lighter;
+}
+
+@font-face {
+    font-family: sourcesanspro;
+    src: url('./fonts/sourcesanspro.woff');
+    font-weight:bolder;
+}
+
+body {
+    background-color: red;
+    background-image: url(./asserts/01.jpg);
+    font-family: sourcesanspro;
+    width: 400px;
+    height: 600px;
+}
