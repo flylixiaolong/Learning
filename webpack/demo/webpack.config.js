@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //通过 npm 安装
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
@@ -9,7 +10,12 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle_[hash].js'
+    filename: '[name].bundle.[hash].js'
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true
   },
   module: {
     rules: [
@@ -46,7 +52,10 @@ const config = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
-    new HtmlWebpackPlugin({template: 'index.html'})
+    new HtmlWebpackPlugin({template: 'index.html'}),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.HotModuleReplacementPlugin()
+
   ]
 };
 
