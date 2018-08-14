@@ -1,21 +1,18 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //通过 npm 安装
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/index.js'
+  },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    filename: '[name].bundle.[hash].js'
+    filename: '[name].bundle.[hash:8].js'
   },
   module: {
     rules: [
-      {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
@@ -36,7 +33,8 @@ module.exports = {
             loader: 'file-loader',
             options:
             {
-              name: '[name].[ext]'
+              name: '[name].[ext]',
+              outputPath: 'fonts'
             }
           }
         ]
@@ -44,7 +42,7 @@ module.exports = {
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(['dist'], {root: path.resolve(__dirname, '..')}),
     new HtmlWebpackPlugin({ template: 'index.html' })
   ]
 };
