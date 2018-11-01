@@ -1,0 +1,13 @@
+---
+
+- name: "restart node proj"
+  shell: pm2 restart '{{ item }}'
+  with_items: '{{ projects }}'
+  ignore_errors: yes
+  register: info
+
+- name: "logging restart info" 
+  debug:
+    msg: "{{ item.stdout_lines }}"
+  with_items: '{{ info.results }}'
+

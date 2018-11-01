@@ -1,4 +1,4 @@
 ---
 - hosts: qoa
   roles:
-    - common
+    - pm2
