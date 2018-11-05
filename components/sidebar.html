@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S"
+        crossorigin="anonymous">
+    <style>
+ 
+    </style>
+</head>
+
+<body>
+    <ul class="sidebar">
+        <li>
+            <a>
+                <span class="mr-3">
+                    <i class="fas fa-list"></i>
+                </span>
+                <span> 系统组织管理 </span>
+                <span class="ml-3 angle">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+            <ul>
+                <li>
+                    <a>
+                        <span class="mr-3">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span> 添加用户 </span>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <span class="mr-3">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <span> 密码重置 </span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a>
+                <span class="mr-3">
+                    <i class="fas fa-user"></i>
+                </span>
+                <span> 用户角色管理 </span>
+                <span class="angle">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span class="mr-3">
+                    <i class="fas fa-lock"></i>
+                </span>
+                <span> 权限分配管理 </span>
+                <span class="angle">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </li>
+        <li>
+            <a>
+                <span class="mr-3">
+                    <i class="fas fa-key"></i>
+                </span>
+                <span> 用户会话管理 </span>
+                <span class="angle">
+                    <i class="fa fa-angle-right"></i>
+                </span>
+            </a>
+        </li>
+    </ul>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".sidebar li>a").bind("click", function () {
+            var elem = $(this).parent();
+            sidebar = elem.parent()[0].querySelectorAll(".active");
+            elem.toggleClass("active");
+            $(sidebar).removeClass("active");
+        })
+    })
+</script>
+
+</html>

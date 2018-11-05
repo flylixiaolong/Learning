@@ -1,0 +1,40 @@
+li {
+    list-style: none;
+}
+
+.img-control {
+    cursor: zoom-in;
+}
+
+.img-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1102;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.img-element {
+    cursor: zoom-out;
+    position: absolute;
+    visibility: visible;
+    left: 50%;
+    top: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+
+ul.attachments {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+ul.attachments>li {
+    display: inline-block;
+    margin: 0 2em;
+    text-align: center;
+}
