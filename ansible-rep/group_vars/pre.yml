@@ -1,0 +1,6 @@
+---
+ansible_user:          pm2jia
+ansible_password:      dianda123!@#
+ansible_become:        yes
+ansible_become_method: su
+ansible_become_user:   pm2jia

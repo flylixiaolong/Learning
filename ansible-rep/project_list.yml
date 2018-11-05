@@ -1,0 +1,7 @@
+---
+- hosts: qoa
+  tasks:
+    - name : 'print projest'
+      debug:
+        msg: '{{ item }}'
+      with_items: '{{ projects }}'

@@ -1,0 +1,6 @@
+---
+- name: "copy files to dest"
+  copy: src={{ item.src }} dest=/home/{{ ansible_become_user }}/{{ item.dest }}
+  with_items:
+    - { src: 'test1.txt', dest: 'test1.txt'}
+    - { src: 'test2.txt', dest: 'test2.txt'}

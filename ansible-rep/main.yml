@@ -1,0 +1,4 @@
+---
+- hosts: qoa
+  roles:
+    - pm2
