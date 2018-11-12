@@ -1,0 +1,42 @@
+detailId:                     28133880
+branchOrderId:                1248752
+orderId:                      6192883
+produceDates[0][goodId]:      173790
+produceDates[0][produceDate]: 2018-05-01
+produceDates[1][goodId]:      183200
+produceDates[1][produceDate]: 2018-08-07
+amount:                       1
+message:
+onSellGoodId:                 127060
+backComboType:                1
+
+
+detailId:          28135121
+branchOrderId:     1249947
+goodId:            183181
+backGoodId:        183180
+orderId:           6193726
+produceDates[]:    2018-07-10
+produceDates[]:    2018-07-09
+amounts[]:         1
+amounts[]:         1
+onSellGoodsCombId: 42496
+message:
+onSellGoodId:      127125
+orderComboType:    0
+backPackType:      0
+backComboType:     2
+
+detailId:          28135121
+branchOrderId:     1249947
+goodId:            183181
+backGoodId:        183181
+orderId:           6193726
+produceDates[]:    2018-07-10
+amounts[]:         1
+onSellGoodsCombId: 42496
+message:
+onSellGoodId:      127125
+orderComboType:    0
+backPackType:      1
+backComboType:     2
